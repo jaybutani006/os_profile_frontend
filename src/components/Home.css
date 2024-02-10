@@ -1,0 +1,141 @@
+.text-center {
+    text-align: center;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.max-w-6xl {
+    max-width: 72rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+* {
+    scrollbar-width: 8px;
+    text-underline-position: from-font;
+    box-sizing: border-box;
+    font-variant-numeric: slashed-zero!important;
+}
+
+.text-gray-gray4 {
+    --tw-text-opacity: 1;
+    color: rgb(149 157 165/var(--tw-text-opacity));
+}
+
+.w-full {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+}
+
+.pl-6 {
+    padding-left: 1.5rem;
+}
+
+.p-3 {
+    padding: 0.75rem;
+}
+
+.bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+}
+
+.border-primaryBorder {
+    --tw-border-opacity: 1;
+    border-color: rgb(225 228 232/var(--tw-border-opacity));
+}
+
+.border {
+    border-width: 1px;
+}
+
+.gap-x-2 {
+    -moz-column-gap: .5rem;
+    column-gap: 0.5rem;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.react-calendar-heatmap .color-scale-1 {
+    fill: #d6e685;
+}
+
+.react-calendar-heatmap .color-scale-2 {
+    fill: #8cc665;
+}
+
+.react-calendar-heatmap .color-scale-3 {
+    fill: #44a340;
+}
+
+.react-calendar-heatmap .color-scale-4 {
+    fill: #1e6823;
+}
+
+.react-calendar-heatmap {
+    width: 90vw;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.react-calendar-heatmap rect {
+    transition: fill 0.2s;
+}
+
+.react-calendar-heatmap rect:hover {
+    fill: #ff9833;
+    /* Change the color as needed */
+}
+
+
+/* Position the tooltip and hide it by default */
+
+.react-calendar-heatmap-tooltip {
+    position: absolute;
+    display: none;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    pointer-events: none;
+}
+
+
+/* Show the tooltip on hover */
+
+.react-calendar-heatmap rect:hover+.react-calendar-heatmap-tooltip {
+    display: block;
+}
+
+.color-scale-green {
+    background-color: green;
+}
