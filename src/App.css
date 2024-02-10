@@ -870,7 +870,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100px;
+    /* height: 30vh; */
 }
 
 .loading-spinner {
@@ -889,13 +890,6 @@ body {
     100% {
         transform: rotate(360deg);
     }
-}
-
-.loading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
 }
 
 .color-scale-green {
@@ -944,4 +938,42 @@ body {
     border: 1px solid #ccc;
     padding: 8px;
     z-index: 1000;
+}
+
+.repository-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    /* Adjust the gap between boxes as needed */
+}
+
+.repository-box {
+    flex: 0 0 calc(33.33% - 16px);
+    /* Adjust the width of each box and the gap */
+    background-color: #f0f0f0;
+    /* Add any other styling as needed */
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.box-spacer {
+    flex-basis: 100%;
+    /* Make the spacer take up the full width of the container */
+    height: 0;
+    /* Hide the spacer visually */
+}
+
+.repository-box {
+    background-color: #f0f0f0;
+    /* Set the default background color */
+    padding: 16px;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+    /* Add a smooth transition effect */
+}
+
+.repository-box:hover {
+    background-color: #5b6fdd;
+    color: #fff;
+    /* Set the background color on hover */
 }
